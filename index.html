@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Kumar — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- AOS Scroll Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Ankit<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO / HOME SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="900">
+        <p class="hero-greeting">👋 Hello World! I'm</p>
+        <h1 class="hero-name">Ankit Kumar</h1>
+        <h2 class="hero-title">
+          I'm a <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Passionate about building clean, responsive & user-friendly websites. BCA Student by day, Coder by night 🚀
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-eye"></i> View Projects
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="900">
+        <div class="profile-ring">
+          <div class="profile-img-wrap">
+            <!-- Replace this src with your actual photo -->
+            <img
+              src="https://ui-avatars.com/api/?name=Ankit+Kumar&size=300&background=6c63ff&color=fff&bold=true&font-size=0.4"
+              alt="Ankit Profile Photo"
+              class="profile-img"
+              id="profileImg"
+            />
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+        </div>
+        <div class="floating-badge badge-html"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="floating-badge badge-js"><i class="fab fa-js"></i> JS</div>
+        <div class="floating-badge badge-css"><i class="fab fa-css3-alt"></i> CSS3</div>
+      </div>
+    </div>
+
+    <div class="scroll-down">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Know Me More</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-img-wrap">
+            <img
+              src="https://ui-avatars.com/api/?name=Ankit+Singh&size=400&background=6c63ff&color=fff&bold=true&font-size=0.4"
+              alt="About Ankit Kumar"
+              class="about-img"
+            />
+            <div class="about-exp-badge">
+              <span class="exp-number">1</span>
+              <span class="exp-label">Years Coding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="about-sub">Web Developer & BCA Student</h3>
+          <p class="about-desc">
+            Namaste! 🙏 I'm <strong>Ankit Kumar</strong> — a passionate web developer and BCA student.
+I love building websites — clean design, smooth animations, and a user-friendly experience are my specialty. When I'm not coding, I'm playing games or exploring new technologies.
+          </p>
+          <p class="about-desc">
+            I believe in <strong>"Learn → Build → Share"</strong> mantra. Har project se kuch naya sikhta hoon 
+            aur apni skills continuously improve karta hoon.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-user-graduate"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">BCA (Bachelor of Computer Applications)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <div>
+                <span class="info-label">College</span>
+                <span class="info-value">LNCT Group of College, Bhopal</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">India 🇮🇳</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-heart"></i>
+              <div>
+                <span class="info-label">Interests</span>
+                <span class="info-value">Coding, Gaming, UI Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-buttons">
+            <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Hire Me</a>
+            <a href="#projects" class="btn btn-outline"><i class="fas fa-code"></i> See Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Tech Skills -->
+        <div class="skills-col" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="skills-sub"><i class="fas fa-code"></i> Technical Skills</h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-html5 html-icon"></i> HTML5</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90" style="background: linear-gradient(90deg, #e34c26, #f16529);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-css3-alt css-icon"></i> CSS3</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85" style="background: linear-gradient(90deg, #264de4, #2965f1);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-js js-icon"></i> JavaScript</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75" style="background: linear-gradient(90deg, #f7df1e, #f0c808); "></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-java java-icon"></i> Java</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="70" style="background: linear-gradient(90deg, #f89820, #e76f00);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-python python-icon"></i> Python (Basic)</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="60" style="background: linear-gradient(90deg, #3776ab, #ffd43b);"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="skills-col" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="skills-sub"><i class="fas fa-tools"></i> Tools & Technologies</h3>
+
+          <div class="tools-grid">
+            <div class="tool-card">
+              <i class="fab fa-git-alt" style="color:#f34f29;"></i>
+              <span>Git</span>
+            </div>
+            <div class="tool-card">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="tool-card">
+              <i class="fas fa-code" style="color:#007acc;"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="tool-card">
+              <i class="fas fa-database" style="color:#4db33d;"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="tool-card">
+              <i class="fas fa-mobile-alt" style="color:#6c63ff;"></i>
+              <span>Responsive</span>
+            </div>
+            <div class="tool-card">
+              <i class="fas fa-paint-brush" style="color:#ff6b6b;"></i>
+              <span>UI Design</span>
+            </div>
+            <div class="tool-card">
+              <i class="fab fa-figma" style="color:#a259ff;"></i>
+              <span>Figma</span>
+            </div>
+            <div class="tool-card">
+              <i class="fas fa-terminal" style="color:#4ec9b0;"></i>
+              <span>Terminal</span>
+            </div>
+          </div>
+
+          <!-- Extra stats -->
+          <div class="stats-row">
+            <div class="stat-box" data-aos="zoom-in" data-aos-delay="200">
+              <span class="stat-num" data-count="10">0</span>+
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-box" data-aos="zoom-in" data-aos-delay="300">
+              <span class="stat-num" data-count="2">0</span>+
+              <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat-box" data-aos="zoom-in" data-aos-delay="400">
+              <span class="stat-num" data-count="5">0</span>+
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+        <button class="filter-btn" data-filter="app">Apps</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=500&q=80" alt="Calculator Project" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="https://github.com/" class="overlay-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">🧮 Calculator Website</h3>
+            <p class="project-desc">
+              A clean and responsive calculator with all basic arithmetic operations. Keyboard support and history log bhi hai.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=500&q=80" alt="Tic Tac Toe" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="https://github.com/" class="overlay-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">🎮 Tic Tac Toe Game</h3>
+            <p class="project-desc">
+              2-player interactive Tic Tac Toe game with win detection, score tracking aur restart functionality ke saath.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=500&q=80" alt="Quiz Website" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="https://github.com/" class="overlay-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">📝 Quiz Website</h3>
+            <p class="project-desc">
+              Multiple-choice quiz app with timer, score tracking, aur end me detailed result summary dikhata hai.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&q=80" alt="Todo App" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="https://github.com/" class="overlay-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">✅ Todo List App</h3>
+            <p class="project-desc">
+              LocalStorage-based todo app with add, delete, complete functionality. Data refresh hone par bhi save rehta hai.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=500&q=80" alt="Weather App" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="https://github.com/" class="overlay-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">API</span>
+            </div>
+            <h3 class="project-title">🌦️ Weather App</h3>
+            <p class="project-desc">
+              Real-time weather app using OpenWeather API. City search, temperature, humidity aur weather icon dikhata hai.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="350">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1592155931584-901ac615b9ab?w=500&q=80" alt="Number Guessing Game" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="https://github.com/" class="overlay-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">🎲 Number Guessing Game</h3>
+            <p class="project-desc">
+              Random number guessing game with hints (higher/lower), attempts counter aur difficulty levels ke saath.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My CV</span>
+        <h2 class="section-title">My <span class="highlight">Resume</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="resume-grid">
+        <!-- Education Timeline -->
+        <div class="resume-col" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="resume-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2022 – 2025</span>
+                <h4>BCA — Bachelor of Computer Applications</h4>
+                <p>Your College Name, City</p>
+                <p class="timeline-desc">Focus on Web Development, Java Programming, Database Management & Software Engineering.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2020 – 2022</span>
+                <h4>12th — PCM / Science Stream</h4>
+                <p>Your School Name, City</p>
+                <p class="timeline-desc">Scored XX% in Class 12th Board Exams. Computer Science as elective subject.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 – 2020</span>
+                <h4>10th — CBSE / State Board</h4>
+                <p>Your School Name, City</p>
+                <p class="timeline-desc">Scored XX% in Class 10th. IT as optional subject.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Experience / Certifications Timeline -->
+        <div class="resume-col" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="resume-col-title"><i class="fas fa-certificate"></i> Certifications & Experience</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h4>Web Development Bootcamp</h4>
+                <p>Udemy / Coursera</p>
+                <p class="timeline-desc">Completed full-stack web development course covering HTML, CSS, JavaScript and more.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023</span>
+                <h4>Java Programming Certificate</h4>
+                <p>NPTEL / Infosys Springboard</p>
+                <p class="timeline-desc">Completed Java programming fundamentals and OOP concepts certification.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023</span>
+                <h4>Freelance Web Projects</h4>
+                <p>Self-Employed</p>
+                <p class="timeline-desc">Built static websites and landing pages for local clients and college assignments.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Resume CTA -->
+      <div class="resume-cta" data-aos="zoom-in" data-aos-delay="200">
+        <div class="resume-cta-card">
+          <div class="cta-left">
+            <i class="fas fa-file-pdf cta-icon"></i>
+            <div>
+              <h3>Download My Full Resume</h3>
+              <p>Get a complete overview of my skills, projects and education in PDF format.</p>
+            </div>
+          </div>
+          <a href="assets/resume.pdf" download class="btn btn-primary cta-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Cards -->
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <p class="contact-intro">
+            Kisi project ke liye kaam chahiye? Ya bas hello bolna hai? 😊<br>
+            Mujhse contact karo — main <strong>24 ghante me reply</strong> karta hoon!
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon email-bg">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <a href="mailto:ankitkumar1808005@gmail.com" class="contact-card-value">ankitkumar1808005@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon phone-bg">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <span class="contact-card-label">Phone</span>
+                <a href="tel:+919123464424" class="contact-card-value">+91 9123464424</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon location-bg">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">India 🇮🇳</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-section">
+            <h4 class="social-title">Follow Me On</h4>
+            <div class="social-links-row">
+              <a href="https://github.com/" target="_blank" class="social-link-card github-bg" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" class="social-link-card linkedin-bg" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://instagram.com/" target="_blank" class="social-link-card instagram-bg" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="social-link-card twitter-bg" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="100">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <div class="input-wrap">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="Aapka naam" required />
+                </div>
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="input-wrap">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="aapka@email.com" required />
+                </div>
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="Message ka topic" required />
+              </div>
+              <span class="form-error" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="message" name="message" placeholder="Apna message yahan likhein..." rows="5" required></textarea>
+              </div>
+              <span class="form-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Message sent successfully! Main jald hi reply karunga. 🙏
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Ankit<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Web Developer & BCA Student 🚀</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/ankitkumar25s" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/_ankitt.singh__/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with <span class="heart"></san> by <strong>Ankit Kumar</strong> &nbsp;|&nbsp; © <span id="year"></span> All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
